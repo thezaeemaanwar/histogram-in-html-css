@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: center;
+  background: linear-gradient(to right, rgb(15, 16, 77), rgb(63, 13, 40));
+}
+
+.histogram {
+  background-color: white;
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticks {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.tick {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bottom {
+  height: 10px;
+  width: 90%;
+  border-bottom: 0.929164px dashed #041242;
+  opacity: 0.07;
+}
+
+.bars-container {
+  width: 90%;
+  height: 90%;
+
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.bar {
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(blue 0% 30%, red 30% 50%, gray 50%);
+  transform: rotate(180deg);
+}
+
+.labels {
+  width: 90%;
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  /* background-color: purple; */
+}
